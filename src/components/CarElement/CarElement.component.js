@@ -21,7 +21,10 @@ const CarElement = ({
 
     useEffect(() => {
         // setWeight(total);
-        return () => setWeight(weight + car.weight);
+        const updateWeight = () => {
+            setWeight(weight + car.weight);
+        };
+        return updateWeight();
     }, []);
 
     // useEffect(() => {

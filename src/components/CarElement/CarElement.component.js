@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import Wrapped from "./CarElement.styled";
 
@@ -17,15 +17,12 @@ const CarElement = ({
             : { model: "רכב לא בצי", weight: 0 }
     );
 
-    // const total = weight + car.weight;
-
-    useEffect(() => {
-        // setWeight(total);
-        const updateWeight = () => {
-            setWeight(weight + car.weight);
-        };
-        return updateWeight();
-    }, []);
+    // useEffect(() => {
+    //     const updateWeight = () => {
+    //         setWeight(weight + car.weight);
+    //     };
+    //     return updateWeight();
+    // }, []);
 
     // useEffect(() => {
     //     setWeight(weight + car.weight);

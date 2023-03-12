@@ -78,6 +78,10 @@ const LoadingForm = () => {
             setMessage("הרכב כבר קיים ברשימה");
             msg.current.style.display = "block";
         }
+
+        carId in carsData
+            ? setWeight(weight + carsData[carId].weight)
+            : setWeight(weight + 0);
     };
 
     const continueHandler = () => {

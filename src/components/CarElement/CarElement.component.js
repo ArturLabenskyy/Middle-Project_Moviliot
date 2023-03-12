@@ -9,9 +9,7 @@ const CarElement = ({
     weight,
     setWeight,
     carsData,
-    weightCheck,
-    h4Ref,
-    limitWeight,
+    // weightCheck,
 }) => {
     const [car] = useState(
         number in carsData
@@ -25,23 +23,16 @@ const CarElement = ({
         setWeight(total);
     }, []);
 
-    useEffect(() => {
-        function weightCheck() {
-            if (weight > limitWeight) {
-                h4Ref.current.style.color = "red";
-            } else {
-                h4Ref.current.style.color = "#2b3a55";
-            }
-        }
-        // setWeight(weight + car.weight);
-        weightCheck();
-    }, []);
+    // useEffect(() => {
+    //     setWeight(weight + car.weight);
+    //     weightCheck();
+    // }, []);
 
     const deleteHandler = () => {
         const newCarsList = carsList.filter((el) => el !== number);
         setCarsList(newCarsList);
         setWeight(weight - car.weight);
-        weightCheck();
+        // weightCheck();
     };
 
     return (

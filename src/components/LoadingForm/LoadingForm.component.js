@@ -151,6 +151,7 @@ const LoadingForm = () => {
                             setWeight={setWeight}
                             carsData={carsData}
                             weightCheck={weightCheck}
+                            limitWeight={limitWeight}
                         />
                     );
                 })}

@@ -20,7 +20,7 @@ const CarElement = ({
     useEffect(() => {
         setWeight(weight + car.weight);
         weightCheck();
-    }, [car.weight, setWeight, weight, weightCheck]);
+    }, []);
 
     const deleteHandler = () => {
         const newCarsList = carsList.filter((el) => el !== number);

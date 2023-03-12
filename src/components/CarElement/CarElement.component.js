@@ -10,6 +10,8 @@ const CarElement = ({
     setWeight,
     carsData,
     weightCheck,
+    h4Ref,
+    limitWeight,
 }) => {
     const [car] = useState(
         number in carsData
@@ -24,6 +26,13 @@ const CarElement = ({
     }, []);
 
     useEffect(() => {
+        function weightCheck() {
+            if (weight > limitWeight) {
+                h4Ref.current.style.color = "red";
+            } else {
+                h4Ref.current.style.color = "#2b3a55";
+            }
+        }
         // setWeight(weight + car.weight);
         weightCheck();
     }, []);

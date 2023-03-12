@@ -49,7 +49,7 @@ const LoadingForm = () => {
             setCarsList(arr);
         }
         getCarsFromTruck();
-    }, []);
+    }, [truck]);
 
     if (!isLogin) navigate("/");
 

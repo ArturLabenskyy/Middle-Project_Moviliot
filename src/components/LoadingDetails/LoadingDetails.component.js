@@ -14,7 +14,6 @@ const LoadingDetails = ({ carsData, carsList, setModal }) => {
 
     const { truck } = useContext(AppContext);
     const truckId = Object.keys(truck)[0];
-    let counter = 1;
     const cars = {};
 
     const closeModal = () => {
@@ -30,7 +29,7 @@ const LoadingDetails = ({ carsData, carsList, setModal }) => {
             const obj = truck[truckId];
             truck[truckId] = { ...obj, cars };
             db.updateTruck(truck);
-            ++counter;
+            // ++counter;
         });
         setModal("none");
         navigate("/truck-page");

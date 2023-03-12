@@ -35,7 +35,7 @@ const LoadingForm = () => {
 
     useEffect(() => {
         getCarsFromTruck();
-    }, []);
+    }, [carId]);
 
     if (!isLogin) navigate("/");
 

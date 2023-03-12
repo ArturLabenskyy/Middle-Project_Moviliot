@@ -17,11 +17,12 @@ const CarElement = ({
             : { model: "רכב לא בצי", weight: 0 }
     );
 
-    const total = weight + car.weight;
+    // const total = weight + car.weight;
 
     useEffect(() => {
-        setWeight(total);
-    }, [setWeight]);
+        // setWeight(total);
+        return () => setWeight(weight + car.weight);
+    }, []);
 
     // useEffect(() => {
     //     setWeight(weight + car.weight);

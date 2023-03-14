@@ -9,7 +9,6 @@ const CarElement = ({
     weight,
     setWeight,
     carsData,
-    // weightCheck,
 }) => {
     const [car] = useState(
         number in carsData
@@ -17,23 +16,10 @@ const CarElement = ({
             : { model: "רכב לא בצי", weight: 0 }
     );
 
-    // useEffect(() => {
-    //     const updateWeight = () => {
-    //         setWeight(weight + car.weight);
-    //     };
-    //     return updateWeight();
-    // }, []);
-
-    // useEffect(() => {
-    //     setWeight(weight + car.weight);
-    //     weightCheck();
-    // }, []);
-
     const deleteHandler = () => {
         const newCarsList = carsList.filter((el) => el !== number);
         setCarsList(newCarsList);
         setWeight(weight - car.weight);
-        // weightCheck();
     };
 
     return (

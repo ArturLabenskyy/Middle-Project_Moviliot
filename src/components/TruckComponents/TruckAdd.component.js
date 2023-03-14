@@ -25,7 +25,6 @@ const TruckAdd = () => {
     const addTruckHandler = () => {
         if (truckId in trucks) {
             const truck = { [truckId]: trucks[truckId] };
-            console.log(truck);
             setTruck(truck);
             truck[truckId].inUse = true;
             db.updateTruck(truck);

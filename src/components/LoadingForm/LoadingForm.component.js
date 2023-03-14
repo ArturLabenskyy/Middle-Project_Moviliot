@@ -96,21 +96,6 @@ const LoadingForm = () => {
         }
     }
 
-    // function getCarsFromTruck() {
-    //     const arr = [];
-    //     const truckId = Object.keys(truck)[0];
-    //     if ("cars" in truck[truckId]) {
-    //         let obj = truck[truckId];
-    //         obj = obj.cars;
-    //         if (Object.keys(obj).length > 0) {
-    //             for (let i in obj) {
-    //                 arr.push(i);
-    //             }
-    //         }
-    //     }
-    //     setCarsList(arr);
-    // }
-
     return (
         <Wrapped>
             <div

@@ -14,7 +14,6 @@ const UnloadingDetails = ({ setModal, carsData, carsLeave }) => {
 
     const { truck } = useContext(AppContext);
     const truckId = Object.keys(truck)[0];
-    // const cars = {};
 
     const closeModal = () => {
         carsLeave.forEach((el) => {

@@ -29,7 +29,6 @@ const LoadingDetails = ({ carsData, carsList, setModal }) => {
             const obj = truck[truckId];
             truck[truckId] = { ...obj, cars };
             db.updateTruck(truck);
-            // ++counter;
         });
         setModal("none");
         navigate("/truck-page");

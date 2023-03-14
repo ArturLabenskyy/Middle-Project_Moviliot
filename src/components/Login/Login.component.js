@@ -48,7 +48,6 @@ const Login = () => {
                 }}
             />
             <Button name="כניסה" onClick={loginHandler} />
-            {/* <button onClick={loginHandler}>כניסה</button> */}
         </Wrapped>
     );
 };
